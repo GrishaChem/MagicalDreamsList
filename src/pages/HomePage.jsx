@@ -2,26 +2,21 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { selectIsLoggedIn } from "../redux/auth/selectors";
+import s from "../pages/Home.module.css"
 
 const Home = () => {
   const navigate = useNavigate();
   const isLogged = useSelector(selectIsLoggedIn);
 
   return !isLogged ? (
-    <div className="hero bg-base-200 min-h-screen">
+    <div className={`${s.bg} hero bg-base-200 min-h-screen `}>
       <div className="hero-content text-center">
         <div className="max-w-md">
           <h1 className="text-5xl font-bold">
-            Welcome to "Magical Dream-list" creator
+            Welcome to the To-Do List Creator!
           </h1>
           <p className="py-6">
-            This platform is designed for dreamers and visionaries who wish to
-            capture and express their magical dreams—goals and fantasies that
-            inspire and motivate. Whether you're aspiring to travel the world,
-            start a new venture, or simply embrace your creativity, this space
-            allows you to document your dreams and share them with others.
-            Embrace the journey of self-discovery and let your imagination soar
-            as you create your personal dream list!
+            This platform is designed to help you organize, plan, and track your tasks efficiently. Whether you want to manage daily chores, work projects, or personal goals, this space allows you to create, prioritize, and complete your to-do items with ease. Stay productive, stay focused, and make every day more organized as you build your personal task list!
           </p>
           <button
             className="btn btn-primary"
