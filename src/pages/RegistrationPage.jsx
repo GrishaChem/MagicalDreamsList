@@ -21,15 +21,12 @@ const RegistrationPage = () => {
     <div className="hero bg-base-200 min-h-screen">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Sign up now!</h1>
+          <h1 className="text-5xl font-bold leading-tight">
+            <span className="whitespace-nowrap">Sign up</span>
+            <br />
+            now!
+          </h1>
           <p className="py-6">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias,
-            laboriosam veniam. Explicabo sit beatae sed reiciendis assumenda,
-            voluptas iste alias temporibus mollitia neque iusto. Suscipit
-            incidunt magni odio consequatur et. Illum commodi doloribus esse
-            unde delectus, fuga repellat dolorum, debitis impedit sapiente error
-            facere veritatis, inventore ipsam atque officia nam illo eveniet
-            recusandae similique mollitia voluptatem adipisci modi! Hic, minima.
           </p>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">

@@ -35,9 +35,9 @@ const ContactForm = () => {
     <div className="hero bg-base-200 min-h-screen mb-4 rounded-md">
       <div className="hero-content flex-col lg:flex-row-reverse">
         <div className="text-center lg:text-left">
-          <h1 className="text-5xl font-bold">Add your "Magical Dream" now!</h1>
+          <h1 className="text-5xl font-bold">Add your "Goal" now!</h1>
           <p className="py-6">
-            Write down your "Magical Dream", your goal or your desire{" "}
+            Write down your "To-do list", your goal or your desire{" "}
           </p>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -64,11 +64,11 @@ const ContactForm = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">The Dream</span>
+                    <span className="label-text">The Goal</span>
                   </label>
                   <Field
                     className="input input-bordered"
-                    placeholder="Type a dream"
+                    placeholder="Type a goal"
                     name="number"
                     id={id}
                   ></Field>
@@ -79,7 +79,7 @@ const ContactForm = () => {
 
                 <div className="form-control mt-6">
                   <button className="btn btn-primary" type="submit">
-                    Add Dream
+                    Add goal
                   </button>
                 </div>
               </Form>

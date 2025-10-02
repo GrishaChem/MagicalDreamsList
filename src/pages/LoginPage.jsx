@@ -3,8 +3,10 @@ import React from "react";
 import { useDispatch } from "react-redux";
 import { login } from "../redux/auth/operations";
 import toast from "react-hot-toast";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const LoginPage = () => {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
   const initialValues = {
     email: "",
@@ -28,9 +30,6 @@ const LoginPage = () => {
         <div className="text-center lg:text-left">
           <h1 className="text-5xl font-bold">Login now!</h1>
           <p className="py-6">
-            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda
-            excepturi exercitationem quasi. In deleniti eaque aut repudiandae et
-            a id nisi.
           </p>
         </div>
         <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
@@ -61,11 +60,12 @@ const LoginPage = () => {
                   className="input input-bordered"
                   required
                 />
-                <label className="label">
-                  <a href="#" className="label-text-alt link link-hover">
-                    Forgot password?
-                  </a>
-                </label>
+                <button
+                  className=""
+                  onClick={() => navigate("/register")}
+                >
+                  Have not registered yet?
+                </button>
               </div>
               <div className="form-control mt-6">
                 <button className="btn btn-primary" type="submit">
