@@ -27,7 +27,7 @@ const Header = () => {
       <ul className="flex space-x-4">
         <li>
           <NavLink to="/dreamList" className="hover:text-gray-400 transition">
-            Dream-List
+            To-do list
           </NavLink>
         </li>
         {!isLoggedIn && (

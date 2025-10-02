@@ -64,11 +64,11 @@ const ContactForm = () => {
                 </div>
                 <div className="form-control">
                   <label className="label">
-                    <span className="label-text">The Dream</span>
+                    <span className="label-text">The Goal</span>
                   </label>
                   <Field
                     className="input input-bordered"
-                    placeholder="Type a dream"
+                    placeholder="Type a goal"
                     name="number"
                     id={id}
                   ></Field>
@@ -79,7 +79,7 @@ const ContactForm = () => {
 
                 <div className="form-control mt-6">
                   <button className="btn btn-primary" type="submit">
-                    Add Dream
+                    Add goal
                   </button>
                 </div>
               </Form>
